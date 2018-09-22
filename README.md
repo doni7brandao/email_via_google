@@ -1,18 +1,15 @@
-# Send Email from a *Static* HTML Form using Google Apps Mail!
+# Envie um E-mail de um formulário HTML *Estático* usando o Google Apps Mail!
 
-A ***Step-by-Step Example*** of using an **HTML Form** to send a "Contact Us" Message via Email without a Backend Server using a Google Script - No PHP, Python, Ruby, Java, Node.js etc.
+Um ***exemplo passo a passo*** de como usar um **Formulário HTML** para enviar uma mensagem do tipo "Fale Conosco" por e-mail sem um servidor back-end usando um script do Google - sem PHP, Python, Ruby, Java, Node.js etc.
 
-See a working example here: https://dwyl.github.io/learn-to-send-email-via-google-script-html-no-server/
+DEMONSTRAÇÃO: https://doni7brandao.github.io/email_via_google/
 
-**_Warning:_** Google's API has limits on how many emails it can send in a day.
-This may vary on your Google account, see [the limits here](https://developers.google.com/apps-script/guides/services/quotas).
-We recommend implementing this tutorial through Part 3, since the data will
-always be added to the spreadsheet first, then emailed if possible.
+**_Observação:_** a API do Google tem limites sobre quantos e-mails podem ser enviados por dia. Isso pode variar em sua conta do Google, veja [os limites aqui](https://developers.google.com/apps-script/guides/services/quotas).
+Recomendamos implementar este tutorial na Parte 3, pois os dados sempre serão adicionados à planilha primeiro e, em seguida, enviados por e-mail, se possível.
 
-## Why?
+## Por quê?
 
-We needed a way of sending an email from a "*static*" HTML page
-when you don't (*want* to) *have* a *server*.
+Porque queremos enviar um e-mail a partir de uma Página HTML "*estática*" quando você (*não quer*) *não tem* um *servidor*.
 
 ### *Key Advantages*
 
