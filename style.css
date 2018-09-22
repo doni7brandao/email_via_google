@@ -1,5 +1,8 @@
 body {
-  margin: 0;
+      margin: 30px;
+  		padding: 0;
+  		background: #ddd;
+  		font-family: Arial, Helvetica, sans-serif;
 }
 aside {
     background: #008594; /* same color as selected state on site menu */
