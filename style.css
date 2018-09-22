@@ -2,14 +2,14 @@ body {
   margin: 2em;
 }
 aside {
-    background: #1f8dd6; /* same color as selected state on site menu */
+    background: #008594; /* same color as selected state on site menu */
     padding: 0.3em 1em;
     border-radius: 3px;
     color: #fff;
     margin-bottom: 2em;
 }
 textarea {
-  width: 70%;
+  width: 60%;
 }
 .content-head {
   font-weight: 400;
@@ -27,11 +27,11 @@ textarea {
   background: rgb(28, 184, 65); /* this is a green */
 }
 .button-xlarge {
-  font-size: 125%;
+  font-size: 90%;
 }
 button {
   float: right;
 }
 #name, #email {
-  width: 50%;
+  width: 60%;
 }
