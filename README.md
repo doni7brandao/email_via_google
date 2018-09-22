@@ -2,157 +2,134 @@
 
 Um ***exemplo passo a passo*** de como usar um **Formulário HTML** para enviar uma mensagem do tipo "Fale Conosco" por e-mail sem um servidor back-end usando um script do Google - sem PHP, Python, Ruby, Java, Node.js etc.
 
+Em vez de usar um servidor para enviar seu e-mail, o que é *fácil*, mas exige *manutenção*, 
+use o Google para enviar e-mails em seu nome e use o Google Spreadsheets para acompanhar os dados!
+
 DEMONSTRAÇÃO: https://doni7brandao.github.io/email_via_google/
 
 **_Observação:_** a API do Google tem limites sobre quantos e-mails podem ser enviados por dia. Isso pode variar em sua conta do Google, veja [os limites aqui](https://developers.google.com/apps-script/guides/services/quotas).
-Recomendamos implementar este tutorial na Parte 3, pois os dados sempre serão adicionados à planilha primeiro e, em seguida, enviados por e-mail, se possível.
+Recomendamos implementar este tutorial na Parte 3, pois os dados sempre serão adicionados à planilha primeiro e, em seguida, se tiver tudo certo, enviados por e-mail.
 
 ## Por quê?
 
-Porque queremos enviar um e-mail a partir de uma Página HTML "*estática*" quando você (*não quer*) *não tem* um *servidor*.
+Porque queremos enviar um e-mail a partir de uma Página HTML "*estática*" quando você (*não quer*) ou *não tem* um *servidor*.
 
-### *Key Advantages*
+### *Principais Vantagens*
 
-+ No "*Backend*" to Deploy/Maintain/Pay for
-+ ***Fully Customisabe*** - every aspect is customisable!
-+ Email *sent via* ***Google Mail*** which is ***Whitelisted Everywhere*** (*high deliverability success*)
-+ **Collect/Store** any **form data** in a ***Spreadsheet*** for easy viewing  
-(*perfect if you need to share it with non-technical people*)
++ Nenhum "*Backend*" para implantar/manter/ou pagar
++ ***Totalmente customizável*** - cada aspecto é personalizável!
++ E-mail *enviado por meio do* ***Gmail***, que tem ***alta performance de fornecimento***
++ Você pode **Recolher/Guardar** quaisquer **dados do formulário** em uma ***planilha*** para facilitar a visualização  
+(*perfeito se você precisa compartilhá-lo com pessoas não-técnicas*)
 
-## What?
+## *Como*?
 
-Instead of using a server to send your email,
-which is *easy* but requires *maintenance*,  
-use Google to send mail on your behalf
-and use Google Spreadsheets to keep track of the data!
+### 1. Faça uma cópia da planilha de amostra
 
-> You *could* use a "*free*" service like http://formspree.io/ to process your form submissions
-if you don't care where you are sending your data and want to manage the data submitted  
-in your email inbox (*messy ... yuck*!)  
-*Or*... you can *invest* a few minutes and keep data private/manageable.
-*Take your pick*.
+> Exemplo: https://docs.google.com/spreadsheets/d/1Uvy4hmHj3lh4bXatxLV6FUC9HRlXKjOlYGR3Iwdr-Ps/copy
 
-## *How*?
-
-### 1. Make a Copy of the Sample Spreadsheet
-
-> Sample: https://docs.google.com/spreadsheets/d/1Bn4m6iA_Xch1zzhNvo_6CoQWqOAgwwkOWJKC-phHx2Q/copy
-
-Sign in to your Google account and click on "**Make a copy**..."
+Faça login na sua conta do Google e clique em "**Fazer uma cópia**..."
 
 ![1-make-copy](https://user-images.githubusercontent.com/1406149/29245471-feb7b034-7f97-11e7-9c0d-f06238e8362b.png)
 
-This should give you something like this:
+Isso deve lhe dar algo assim:
 
 ![2-copy-of-sheet](https://cloud.githubusercontent.com/assets/194400/10559710/3aec92f0-74ef-11e5-9295-f1988a23257b.png)
 
 > Note: Feel free to change the name of the Copy to anything you want,
 it will not affect the outcome.
 
-### 2. Open the Script Editor
+### 2. Abra o Editor de Script
 
-Open the **Script editor...** by clicking "**Tools**" > "**Script editor...**"
+Abra o **Editor de Script...** clicando em "**Ferramentas**" > "**Editor de Script...**"
 
 ![2 script-editor](https://cloud.githubusercontent.com/assets/194400/10559732/8db2b9f6-74ef-11e5-8bf2-de286f079929.png)
 
-Here's a *snapshot* of the script you need (*at this point in the exercise*): [google-script-just-email.js](https://raw.githubusercontent.com/dwyl/learn-to-send-email-via-google-script-html-no-server/1d1c6727f69dec64a6b7f6bd6ff0dd72d0374210/google-script-just-email.js)
+Aqui está um *modelo limpo* (*sem comentários*) do script que você precisa : [google-script-just-email.js](https://raw.githubusercontent.com/dwyl/learn-to-send-email-via-google-script-html-no-server/1d1c6727f69dec64a6b7f6bd6ff0dd72d0374210/google-script-just-email.js)
 
-### 3. Set the `TO_ADDRESS` in the Script
+### 3. Defina o `TO_ADDRESS` no script
 
-**_Warning:_** If you do not uncomment and set your email as the value of
-`TO_ADDRESS`, it is possible for someone who has web skills to alter your form
-and send emailed data to an arbitrary email address.
+**_Observação:_** Se você não descomentar e definir seu e-mail como o valor de
+`TO_ADDRESS`, é possível que alguém que tenha habilidades na web altere seu 
+formulário e envie dados por e-mail para um endereço de e-mail arbitrário.
 
-This risk may not be very likely. Instead, if you wish, you can leave this
-variable commented out if you accept this possible risk but want the added
-convenience of setting this email variable inside your HTML form as a
-`data-email` attribute. This allows you to easily change where to send emails
-inside your HTML form without going back through steps 2-6. This functionality
-does **require** you to use the provided JS file in Part Two, Step 10.
-
-If you do not want to accept that potential risk, please uncomment the code for
-the variable `TO_ADDRESS`, and set this value equal to the email which should
-receive the form's data when submitted.
+Descomente o código da variável `TO_ADDRESS` e defina esse valor como igual 
+ao email que deve receber os dados do formulário quando enviado.
 
 ![3-script-editor-showing-script](https://cloud.githubusercontent.com/assets/194400/10560379/9efa5b3a-7501-11e5-96ba-a9e3b2d77ee4.png)
 
-### 4. Save a *New Version* of your Script
+### 4. Salve uma *Nova Versão* do seu script
 
-It's not immediately *obvious* but you have to *click* on "*Manage Versions...*"
+Parece muito *óbvio* mas após *Salvar* você tem que *clicar* em "*Gerenciar Versões...*"
 
 ![19 google-script-no-save-new-version](https://cloud.githubusercontent.com/assets/194400/10558249/527f3c98-74c1-11e5-8290-5af7fa7f5f75.png)
 
-Then *create* your new version:
+Em seguida *crie* sua nova versão:
 
 ![20 google-script-save-new-version](https://cloud.githubusercontent.com/assets/194400/10558250/53d21d5e-74c1-11e5-88c5-7bc2d8ce6228.png)
 
-### 5. Publish the *Updated* Script as a Web App
+### 5. Publicar o script *atualizado* como um App da Web
 
 ![20 a-publish](https://cloud.githubusercontent.com/assets/194400/10558288/50980aa8-74c2-11e5-8576-72084a564779.png)
 
-Select the *latest* project version to deploy.  
-:warning: Note: You *must* select the `Anyone, even anonymous` option for the 'Who has access to the app' dropdown or form responses will not be added to the spreadsheet! :warning:
+Selecione a versão *mais recente* do projeto para implantar.  
+:warning: Observação: Você *deve* selecionar a opção `Anyone, even anonymous` na lista suspensa 'quem tem acesso ao App' ou as respostas ao formulário não serão adicionadas à planilha! :warning:
 
 ![21 deploy-new-version](https://cloud.githubusercontent.com/assets/194400/10558251/570a5428-74c1-11e5-8ced-5dd26d3de3c4.png)
 
-### 6. Authorize the Script to Send Emails
+### 6. Autorize o script para enviar e-mails
 
 ![5 auth-required](https://cloud.githubusercontent.com/assets/194400/10560412/89d3fb0c-7502-11e5-81ce-fb239bf545b2.png)
 
-Unless you [verify your script with Google](https://developers.google.com/apps-script/guides/client-verification#requesting_verification), you will need to click on "Advanced" and "Go to ... (unsafe)" to give this app permissions.
+A menos que você [verify your script with Google](https://developers.google.com/apps-script/guides/client-verification#requesting_verification), será necessário clicar em "Avançado" e "Ir para... (inseguro)" para conceder permissões a este aplicativo.
 
 ![5-auth-failed-verification](https://user-images.githubusercontent.com/1406149/44312495-79583780-a3b6-11e8-9740-8c9b50f195d6.png)
 
 ![5-allow-sending-emails](https://cloud.githubusercontent.com/assets/194400/10560416/a86a26ae-7502-11e5-9add-d5081d409af4.png)
 
-Copy the web app URL to your clip board / note pad.
-Then Click "OK".
+Copie o URL do aplicativo da web para sua placa de recados / bloco de notas. Em seguida, clique em "OK".
 
 ![22 1-deploy-as-web-app](https://cloud.githubusercontent.com/assets/194400/10558255/6eec31e2-74c1-11e5-9c07-cea6209526df.png)
 
+### 7. Crie o seu formulário HTML *básico*
 
-### 7. Create your *basic* HTML Form
+Usando o template `index.html` neste repo, crie seu próprio arquivo html com o formulário básico. (*salve o arquivo*)
 
-Using the template in `index.html` in this repo,
-create your own html file with the basic form. (*save the file*)
-
-:warning: If you're already trying to use *your own form* by this step rather than the example one in this repo:
-+ Each of your form elements must have a `name` attribute equal to that of your column name in the Google sheet
-+ The form's `class` must be `gform`, i.e. `<form class="gform">`
-  + If you want to alter this later, you will need to create your
-  own version of `form-submission-handler.js` and amend the expected `class`
+:warning: Se você prefere usar *o seu próprio formulário* nesta etapa, em vez de usar o exemplo neste repo:
++ Cada um dos seus elementos de formulário deve ter um atributo `Nome` igual ao nome de sua coluna na planilha do Google
++ Os formulários `class` deve ser `gform`, ou seja `<form class="gform">`
++ Se você quiser alterar isso mais tarde, você precisará criar sua própria versão de `script-google-apps.js` e alterar o esperado `class`
 
 
-> Remember to change the Form `action` URL to the one you copied in
-the previous step:
+> Lembre-se de alterar a URL do `action` para o formulário que você copiou na etapa anterior:
 
 ![7-html-form](https://user-images.githubusercontent.com/1406149/44312329-9b9c8600-a3b3-11e8-9816-4bdbbc96dc62.png)
 
 
-### 8. Open the HTML Form (*page*) in your Browser
+### 8. Abra o formulário HTML (*página*) no seu navegador
 
-Fill in some sample data in the HTML Form:
+Preencha alguns dados de amostra no formulário HTML:
 
 ![html form](https://cloud.githubusercontent.com/assets/194400/10560494/674b64c4-7504-11e5-801a-b537d276f671.png)
 
-Submit the form. You should see a confirmation that it was sent:
+Envie o formulário. Você deve ver assim uma confirmação de que foi enviada:
 ![form sent](https://cloud.githubusercontent.com/assets/194400/10560501/8f605dd4-7504-11e5-8cd7-06d768beba4d.png)
 
-### 9. Check the email inbox for the address you set
+### 9. Verifique a caixa de entrada do email para o endereço que você definiu
 
-Open the inbox for the email address you set in **Step 3** (*above*)
+Abra a caixa de entrada para o endereço de e-mail que você definiu na **Etapa 3** (*acima*)
 
 ![email received](https://cloud.githubusercontent.com/assets/194400/10560512/f87f1652-7504-11e5-8b0f-c342c395a193.png)
 
 
-> ***Done***. That's it. You just created an HTML form that sends email!
+> ***Pronto!!!***. É isso aí. Você acabou de criar um formulário HTML que envia e-mail!
 
-# *Part Two - Make It Look Good* ...
+# *Parte dois - customizar para deixa-lo bonitinho*...
 
-We are going to keep this ***Super Lean*** by using [**PURE CSS**](http://purecss.io/start/)
-for our Style (*fix the "ugly" HTML Form in step 8*).
-And `submit` the form using [**JQuery** "***AJAX***"](http://api.jquery.com/jquery.ajax/) to keep the person
-on your page/site (*avoid "ugly" response page*)
+Vamos manter ele assim, usando um estilo ***Super Limpo*** usando o [**PURE CSS**](http://purecss.io/start/)
+f (*corrija o formulário HTML "simples" criado na Etapa 8*).
+
+Corrija o `submit` do formulário usando [**JQuery** "***AJAX***"](http://api.jquery.com/jquery.ajax/) para a resposta a sua mensagem (*mantendo assim a pessoa na sua página!*)
 
 ### 10. Submit the Form using **JavaScript** "***AJAX***"
 
