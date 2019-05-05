@@ -4,7 +4,7 @@ body {
 aside {
     background: #0A67A2; /* mesma cor da div top-nav do site da Prefeitura */
     padding: 13px 13px 13px 0;
-    box-shadow: inset 0 -2px 0 0 #e1bc0f;
+    box-shadow: inset 0 -3px 0 -3px #e1bc0f;
     border-radius: 4px;
     color: #fff;
     margin-bottom: 2em;
