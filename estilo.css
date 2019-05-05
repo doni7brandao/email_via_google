@@ -36,3 +36,33 @@ button {
 #name, #email {
   width: 50%;
 }
+.botaoradio input[type=radio], .botaoradio input[type=checkbox]{
+    display:none; /* Esconde os inputs */
+}
+ 
+.botaoradio label {
+    cursor: pointer;
+}
+.botaoradio input[type="radio"] + label:before, .botaoradio input[type="checkbox"] + label:before {
+    border: 1px solid #5D5C5C;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .25em 0 0;
+    padding:0;
+    vertical-align: top;
+    width: 16px;
+    border-radius:4px;
+}
+ 
+.botaoradio input[type="radio"]:checked + label:before, .botaoradio input[type="checkbox"]:checked + label:before {
+    background: #A0A0A0;
+    color: #FFF;
+    content: "\2713";
+    text-align: center;
+}
+ 
+.botaoradio input[type=radio"]:checked + label:after, .botaoradio input[type="checkbox"]:checked + label:after {
+    font-weight: bold;
+}
