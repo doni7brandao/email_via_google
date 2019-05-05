@@ -1,13 +1,9 @@
 body {
-    background: #1f8dd6;
-    z-index: 1;
-    overflow: hidden;
-    /* The following styles are required for the "scroll-over" effect */
+    margin: 3px;
     width: 100%;
     height: 88%;
     top: 0;
     left: 0;
-    position: fixed !important;
 }
 
 .splash {
