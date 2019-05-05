@@ -45,6 +45,7 @@ button {
 #name, #email {
   width: 50%;
 }
+
 .botaoradio input[type=radio], .botaoradio input[type=checkbox]{
     display:none; /* Esconde os inputs */
 }
@@ -74,4 +75,10 @@ button {
  
 .botaoradio input[type=radio"]:checked + label:after, .botaoradio input[type="checkbox"]:checked + label:after {
     font-weight: bold;
+}
+
+.select {
+    height: 2.25em;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }
