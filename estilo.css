@@ -1,9 +1,12 @@
 body {
-    margin: 3px;
+    min-width: 320px;
+    background-color: #fff;
+    color: #777;
+    line-height: 1.6;
 }
 
 aside {
-    background: #1f8dd6;
+    background: #0A67A2;
     margin: 1em 0;
     padding: 0.3em 1em;
     border-radius: 3px;
