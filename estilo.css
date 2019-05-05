@@ -1,3 +1,7 @@
+body {
+  margin: 13px;
+}
+
 aside {
     background: #0A67A2; /* mesma cor da div top-nav do site da Prefeitura */
     padding: 3px 0 3px 0;
