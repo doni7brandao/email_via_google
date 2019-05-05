@@ -2,7 +2,7 @@ body {
   margin: 3px;
 }
 aside {
-    background: #008594; /* mesma cor dos menus predominantes no site da Prefeitura */
+    background: #0A67A2; /* mesma cor da div top-nav do site da Prefeitura */
     padding: 13px 13px 13px 0;
     border-radius: 3px;
     color: #fff;
