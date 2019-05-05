@@ -2,9 +2,12 @@
 aside {
     background: #0A67A2;
     margin: 3px 0;
-    padding: 0.3em 1em;
+    padding: 3px 0 3px 0;
     border-radius: 5px;
     color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 p {
@@ -16,7 +19,7 @@ p {
 }
 
 textarea {
-  width: 60%;
+  width: 90%;
 }
 .content-head {
   font-weight: 400;
