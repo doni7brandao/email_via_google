@@ -46,7 +46,7 @@ button {
   width: 50%;
 }
 .pure-form select {
-    height: 2.em;
+    height: 1.em;
     border: 1px solid #ccc;
     background-color: #fff;
 }
