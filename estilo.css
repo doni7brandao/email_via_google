@@ -77,7 +77,7 @@ button {
     font-weight: bold;
 }
 
-form-select {
+.select option {
     height: 2.25em;
     border: 1px solid #ccc;
     background-color: #fff;
