@@ -19,7 +19,7 @@ p {
 }
 
 textarea {
-  width: 90%;
+  width: 100%;
 }
 .content-head {
   font-weight: 400;
@@ -44,11 +44,7 @@ button {
 }
 #name, #email {
   width: 50%;
-}
-.select {
-    height: 1.em;
-    border: 1px solid #ccc;
-    background-color: #fff;
+
 }
 
 .botaoradio input[type=radio], .botaoradio input[type=checkbox]{
