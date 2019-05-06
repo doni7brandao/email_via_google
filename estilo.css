@@ -1,6 +1,6 @@
 
 aside {
-    background: #0A67A2;
+    background: #004280;
     margin: 3px 0;
     padding: 3px 0 3px 0;
     border-radius: 6px;
@@ -12,10 +12,10 @@ aside {
 
 p {
     display: block;
-    margin-block-start: 20px;
-    margin-block-end: 20px;
-    margin-inline-start: 15px;
-    margin-inline-end: 15px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 25px;
+    margin-inline-end: 25px;
 }
 
 textarea {
