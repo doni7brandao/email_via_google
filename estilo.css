@@ -45,16 +45,10 @@ button {
 #name, #email {
   width: 50%;
 }
-.styled-select select {
-   background: transparent;
-   width: 100px;
-   padding: 3px;
-   font-size: 14px;
-   line-height: 1;
-   border: 1px;
-   border-radius: 4px;
-   height: 24px;
-   -webkit-appearance: none;
+.pure-form select {
+    height: 2.em;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }
 
 .botaoradio input[type=radio], .botaoradio input[type=checkbox]{
