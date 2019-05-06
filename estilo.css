@@ -45,7 +45,7 @@ button {
 #name, #email {
   width: 50%;
 }
-.pure-form select {
+.select {
     height: 1.em;
     border: 1px solid #ccc;
     background-color: #fff;
