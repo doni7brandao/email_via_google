@@ -45,6 +45,17 @@ button {
 #name, #email {
   width: 50%;
 }
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+}
 
 .botaoradio input[type=radio], .botaoradio input[type=checkbox]{
     display:none; /* Esconde os inputs */
@@ -76,14 +87,4 @@ button {
 .botaoradio input[type=radio"]:checked + label:after, .botaoradio input[type="checkbox"]:checked + label:after {
     font-weight: bold;
 }
-.styled-select select {
-   background: transparent;
-   width: 268px;
-   padding: 5px;
-   font-size: 16px;
-   line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
-   -webkit-appearance: none;
-  }
+
