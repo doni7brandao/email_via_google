@@ -18,16 +18,6 @@ p {
     margin-inline-end: 25px;
 }
 
-code {
-    font-size: 90%;
-    padding: 0.2em 0.4em;
-    white-space: nowrap;
-    font-family: Consolas, Courier, monospace;
-    color: #333;
-    background: rgb(250, 250, 250);
-    font-size: 1em;
-}
-
 textarea {
   width: 100%;
 }
