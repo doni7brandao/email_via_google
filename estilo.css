@@ -46,31 +46,6 @@ button {
   width: 50%;
 }    
 
-.sic-presencial {
-    margin-bottom: 20px;
-    background-color: #fff;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-.row {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-.col-sm-5 {
-	position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.col-sm-7 {
-	position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .botaoradio input[type=radio], .botaoradio input[type=checkbox]{
     display:none; /* Esconde os inputs */
 }
