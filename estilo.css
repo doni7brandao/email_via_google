@@ -77,3 +77,15 @@ button {
     font-weight: bold;
 }
 
+.content p code {
+    font-size: 90%;
+code {
+    padding: 0.2em 0.4em;
+    white-space: nowrap;
+}
+pre, code {
+    font-family: Consolas, Courier, monospace;
+    color: #333;
+    background: rgb(250, 250, 250);
+}
+
