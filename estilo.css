@@ -18,7 +18,7 @@ p {
     margin-inline-end: 25px;
 }
 
-.code {
+code {
     font-size: 90%;
     padding: 0.2em 0.4em;
     white-space: nowrap;
