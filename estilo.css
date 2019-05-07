@@ -73,8 +73,8 @@ button {
     text-align: center;
 }
  
-.botaoradio input[type=radio"]:checked + label:after, .botaoradio input[type="checkbox"]:checked + label:after {
-    font-weight: bold;
+.botaoradio input[type=radio"]:checked + label:after, .botaoradio input[type="checkbox"]:checked + label:after{font-weight: bold;
+
 }
 
 .content p code {
