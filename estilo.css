@@ -96,7 +96,7 @@ button {
 }
  
 .botaoradio input[type="radio"]:checked + label:before, .botaoradio input[type="checkbox"]:checked + label:before {
-    background: #A0A0A0;
+    background: #f2dede;
     color: #FFF;
     content: "\2713";
     text-align: center;
