@@ -27,6 +27,17 @@
   border-top-left-radius: 3px;
 }
 
+.bottomesic {
+  background-color: #ffffff;
+  color: #a94442;
+  margin: -2px 0px 0px 2px;
+  padding: 0px;
+  position: relative;
+  border: 1px solid #a94442;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
 textarea {
   width: 100%;
 }
