@@ -18,8 +18,9 @@
     margin-inline-end: 15px;
 }
 .barra2 {
-  background-color: #f2dede;
-  color: #a94442;
+  background-color: #F5ECCE;
+  color: #1F4981;
+  text-shadow: 0 1px 1px #ffffff;
   margin: -2px 0px 0px 2px;
   padding: 0px;
   position: relative;
@@ -38,8 +39,9 @@
 }
 
 .barra5 {
-  background-color: #f2dede;
-  color: #a94442;
+  background-color: #F5ECCE;
+  color: #1F4981;
+  text-shadow: 0 1px 1px #ffffff;
   margin: -2px 0px 0px 2px;
   padding: 0px;
   position: relative;
