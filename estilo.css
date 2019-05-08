@@ -1,12 +1,15 @@
 
-.barra1 {
-  background-color: #F5ECCE;
-  color: #1F4981;
-  margin: -2px 0px 0px 2px;
-  padding: 0px;
+.barra1 { 
+  font: normal 14px Arial Black, sans-serif;
+  text-shadow: 0 1px 1px #FFF;
+  color: #215197;
+  margin: 0 0 10px 0;
+  padding: 5px 0;
+  text-align: center;
   position: relative;
-  border: 1px solid #DDDDDD;
-  border-radius: 5px;
+  box-shadow: inset 0 -2px 0 0 #e1bc0f;
+  border-radius: 4px;
+  background: #f8d117;
 }
 
 .texto {
