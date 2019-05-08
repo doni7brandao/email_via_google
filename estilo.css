@@ -1,16 +1,16 @@
 
 aside {
-    background: #004280;
+    background: #ffb200;
     margin: 3px 0;
     padding: 3px 0 3px 0;
     border-radius: 6px;
-    color: #FFF;
+    color: #004280;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.pi {
+p {
     display: block;
     margin-block-start: 10px;
     margin-block-end: 10px;
