@@ -5,10 +5,10 @@ aside {
   color: #a94442;
   font-size: 15px;
   font-weight: 500;
-  padding: 10px 15px;
+  padding: 0 auto;
   border-bottom: 1px solid transparent;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 p {
