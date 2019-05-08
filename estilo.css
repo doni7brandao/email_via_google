@@ -5,7 +5,7 @@
   margin: -2px 0px 0px 2px;
   padding: 0px;
   position: relative;
-  border: 1px solid #ebccd1;
+  border: 1px solid #a94442;
   border-radius: 5px;
 }
 
@@ -22,9 +22,9 @@
   margin: -2px 0px 0px 2px;
   padding: 0px;
   position: relative;
-  border: 1px solid #ebccd1;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border: 1px solid #a94442;
+  border-top-right-radius: 11px;
+  border-top-left-radius: 11px;
 }
 
 .bottomesic {
