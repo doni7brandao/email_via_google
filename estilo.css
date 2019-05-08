@@ -33,9 +33,6 @@
   margin: -2px 0px 0px 2px;
   padding: 0px;
   position: relative;
-  border: 1px solid #ebccd1;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
 }
 
 textarea {
