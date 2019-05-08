@@ -11,10 +11,10 @@
 
 .texto {
     display: block;
-    margin-block-start: 10px;
-    margin-block-end: 10px;
-    margin-inline-start: 25px;
-    margin-inline-end: 25px;
+    margin-block-start: 8px;
+    margin-block-end: 8px;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
 }
 .bottombaresic {
   background-color: #f2dede;
