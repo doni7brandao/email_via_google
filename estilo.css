@@ -16,6 +16,15 @@
     margin-inline-start: 25px;
     margin-inline-end: 25px;
 }
+.bottombaresic {
+  background-color: #f2dede;
+  color: #a94442;
+  margin: -2px 0px 0px 2px;
+  padding: 0px;
+  position: relative;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
 
 textarea {
   width: 100%;
