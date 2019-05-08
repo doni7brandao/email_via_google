@@ -1,5 +1,5 @@
 
-aside {
+#aside {
   background-color: #f2dede;
   color: #a94442;
   margin: -2px 0px 0px 2px;
@@ -9,7 +9,7 @@ aside {
   border-radius: 5px;
 }
 
-p {
+#p {
     display: block;
     margin-block-start: 10px;
     margin-block-end: 10px;
