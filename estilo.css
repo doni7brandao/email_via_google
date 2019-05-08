@@ -1,21 +1,14 @@
 
 aside {
-  border-bottom: 3px solid rgba(0,0,0,0.3);
-  border-top: 2px solid rgba(255,255,255,0.2);
-  color: #fff;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
   font-size: 15px;
   font-weight: 500;
-  padding: 0 auto;
-   
-  /*Gradient*/
-  background: #088A85; /* Old browsers */
-  background: -moz-linear-gradient(top, #088A85 0%, #008594 44%, #04B4AE 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#088A85), color-stop(44%,#008594), color-stop(100%,#04B4AE)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #088A85 0%,#008594 44%,#04B4AE 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #088A85 0%,#008594 44%,#04B4AE 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #088A85 0%,#008594 44%,#04B4AE 100%); /* IE10+ */
-  background: linear-gradient(top, #088A85 0%,#008594 44%,#04B4AE 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#088A85', endColorstr='#04B4AE',GradientType=0 ); /* IE6-9 */
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
 
 p {
