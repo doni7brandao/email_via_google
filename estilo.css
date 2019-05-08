@@ -2,6 +2,7 @@
 .barra1 { 
   background-color: #F5ECCE;
   color: #1F4981;
+  text-shadow: 0 1px 1px #000;
   margin: -2px 0px 0px 2px;
   padding: 0px;
   position: relative;
@@ -83,7 +84,7 @@ button {
     cursor: pointer;
 }
 .botaoradio input[type="radio"] + label:before, .botaoradio input[type="checkbox"] + label:before {
-    border: 1px solid #5D5C5C;
+    border: 1px solid #dddddd;
     content: "\00a0";
     display: inline-block;
     font: 16px/1em sans-serif;
@@ -96,7 +97,7 @@ button {
 }
  
 .botaoradio input[type="radio"]:checked + label:before, .botaoradio input[type="checkbox"]:checked + label:before {
-    background: #f2dede;
+    background: #1F4981;
     color: #FFF;
     content: "\2713";
     text-align: center;
