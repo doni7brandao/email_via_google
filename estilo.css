@@ -1,5 +1,5 @@
 
-.aside {
+.barra1 {
   background-color: #f2dede;
   color: #a94442;
   margin: -2px 0px 0px 2px;
@@ -16,7 +16,7 @@
     margin-inline-start: 15px;
     margin-inline-end: 15px;
 }
-.bottombaresic {
+.barra2 {
   background-color: #f2dede;
   color: #a94442;
   margin: -2px 0px 0px 2px;
@@ -27,13 +27,24 @@
   border-top-left-radius: 11px;
 }
 
-.bottomesic {
+.barra4 {
   background-color: #ffffff;
   color: #a94442;
   margin: -2px 0px 0px 2px;
   padding: 0px;
   margin-top: 2px;
   position: relative;
+}
+
+.barra5 {
+  background-color: #f2dede;
+  color: #a94442;
+  margin: -2px 0px 0px 2px;
+  padding: 0px;
+  position: relative;
+  border: 1px solid #a94442;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
 }
 
 textarea {
