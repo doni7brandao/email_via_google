@@ -3,10 +3,8 @@ aside {
   background-color: #f2dede;
   border-color: #ebccd1;
   color: #a94442;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 0 auto;
-  border-bottom: 1px solid transparent;
+  padding: 10px 15px 0;
+  border-bottom: 2px solid transparent;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
